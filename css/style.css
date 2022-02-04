@@ -11,7 +11,43 @@
     giorno 3: ridifinisco il lavoro e perfeziono i punti difficoltosi lasciati indietro*/
 
 body{
+    font: ;
+    font-size: ;
+    color: white;
+}
+.max-container{
     width: 320px;
-    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    
 }
 
+nav{
+    width: 30px;
+    height: calc(100vh - 50px);
+    background-color: pink;
+}
+
+.fixedbar{
+    width: 290px;
+    height: 50px;
+    background-color: grey;
+    opacity: .2;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+main{
+    width: 290px;
+    background-color: black;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding-top: 50px;
+}
+
+footer{
+    width: 320px;
+    height: 50px;
+    background-color: grey;
+}
