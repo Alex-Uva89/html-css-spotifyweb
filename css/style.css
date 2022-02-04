@@ -15,11 +15,11 @@ body{
     font-size: ;
     color: white;
 }
+
 .max-container{
     width: 320px;
-    height: 100vh;
+    height: calc(100vh - 50px);
     display: flex;
-    
 }
 
 nav{
@@ -41,7 +41,6 @@ nav{
 main{
     width: 290px;
     background-color: black;
-    height: calc(100% - 50px);
     overflow-y: auto;
     padding-top: 50px;
 }
@@ -51,3 +50,41 @@ footer{
     height: 50px;
     background-color: grey;
 }
+
+@media only screen
+  and (min-width: 321px)
+  and (max-width: 600px){
+
+    .max-container{
+        width: 600px;
+        height: calc(100vh - 50px);
+        display: flex;
+    }
+
+    .fixedbar{
+        width: 570px;
+    
+    }
+
+    main{
+        width: 570px;
+        height: calc(100vh - 50px);
+    }
+
+    nav{
+        width: 30px;
+        height: calc(100vh - 50px);
+        background-color: pink;
+    }
+
+    footer{
+        width: 600px;
+    }
+}
+
+/* ISTRUZIONI
+tv: min 1100
+- min 700
+  tra le due cambia lla barra laterale
+-min 600
+cellulare min 320 */
