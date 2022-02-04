@@ -17,19 +17,19 @@
 } */
 
 .max-container{
-    width: 320px;
+    min-width: 100vw;
     height: calc(100vh - 50px);
     display: flex;
 }
 
 nav{
-    width: 30px;
+    width: 10vw;
     height: calc(100vh - 50px);
     background-color: pink;
 }
 
 .fixedbar{
-    width: 290px;
+    min-width: 90vw;
     height: 50px;
     background-color: grey;
     opacity: .2;
@@ -39,14 +39,14 @@ nav{
 }
 
 main{
-    width: 290px;
+    min- width: 90vw;
     background-color: black;
     overflow-y: auto;
     padding-top: 50px;
 }
 
 footer{
-    width: 320px;
+    min-width: 100vw;
     height: 50px;
     background-color: grey;
 }
@@ -77,7 +77,7 @@ footer{
     }
 
     footer{
-        width: 600px;
+        width: 100vw;
     }
 }
 
