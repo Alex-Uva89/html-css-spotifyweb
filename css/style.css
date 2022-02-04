@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* _______________SCREEN 1: CELLULARE XS:320PX_____________ */
+
+/*  giorno 1: creo base con quadrati colorati di tutte le misure di screen
+    giorno 2: ridifinisco i contenuti inserendo quelli originali e cancellando le misure fisse inserite
+    giorno 3: ridifinisco il lavoro e perfeziono i punti difficoltosi lasciati indietro*/
+
+body {
+    width:320px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+header{
+
+}
+
+aside{
+
+}
+
+main{
+
+}
+
+footer{
+    
+}
