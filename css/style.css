@@ -15,12 +15,6 @@ a{
     color: white;
 }
 
-.clerfix::after {
-    content: "";
-    display: table;
-    clear:both;
-}
-
 /* :::::::::::::::::::::::::SCREEN 1: 320PX CELL XS:::::::::::::::::::::::::: */
 
 /*  
@@ -205,22 +199,43 @@ main .nav_main ul li{
     font-size: .5rem;
 }
 
-.container_main h4{
+.container_main .card h4{
     font-size: .3rem;
 }
 
-.recently{
+.container_main h4 {
+    font-size: .4rem;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.recently,
+.for_you,
+.popular_singer{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
 }
 
-.container_main .recently .card img{
+.container_main .recently .card img,
+.container_main .for_you .card img{
     width: 125px;
+}
+
+.container_main .popular_singer .card img{
+    width: 125px;
+    border-radius: 100%;
 }
 
 .card{
     width: 125px;
+    margin-bottom: 5px;
+}
+
+.container_main .for_you .card,
+.container_main .popular_singer .card{
+    text-align: center;
 }
 
 .card:nth-child(1n + 1){
