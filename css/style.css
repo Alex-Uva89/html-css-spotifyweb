@@ -36,11 +36,40 @@ nav{
     width: 30px;
     height: 100%;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav .logo{
+    display: none;
+    width: 100px;
+}
+nav img{
+    width: 30px;
+    padding: .3rem;
+}
+nav div .download-icon{
+    padding: .4rem;
+}
+
+nav div .profile-icon{
+    width: 25px;
+    margin: 0.2rem;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgb(194, 193, 193);
+}
+
+.nav-end,
+.nav-start{
+    display: flex;
+    flex-direction: column;
 }
 
 main{
     width: calc(100% - 30px);
-    background-color: rgb(96, 94, 114);
+    background-color: rgb(20,25,34);
     overflow-y: auto;
     padding-top: 50px;
 }
@@ -48,7 +77,7 @@ main{
 footer{
     min-width: 100%;
     height: 50px;
-    background-color: grey;
+    background-color: rgb(40,40,40);
 }
 
 
@@ -57,11 +86,23 @@ footer{
     nav{
         width: 150px;
         height: calc(100vh - 50px);
-        background-color: pink;
     }
 
     .fixedbar{
         width: calc(100% - 150px);
+    }
+
+    nav .logo{
+        display: block;
+    }
+
+    nav .logo-small{
+        display: none;
+    }
+
+    nav .nav-start,
+    nav .nav-end{
+        margin-left: 5px;
     }
 
 }
@@ -75,6 +116,6 @@ footer{
 /* ISTRUZIONI
 tv: min 1100
 - min 700
-  tra le due cambia lla barra laterale
+  tra le due cambia la barra laterale
 -min 600
 cellulare min 320 */
