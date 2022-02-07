@@ -43,6 +43,7 @@ nav{
 nav .logo{
     display: none;
     width: 100px;
+    margin-bottom: 10px;
 }
 nav img{
     width: 30px;
@@ -61,10 +62,29 @@ nav div .profile-icon{
     background-color: rgb(194, 193, 193);
 }
 
+nav .nav-start span,
+nav .nav-end span{
+    display: none;
+    font-size: .6rem;
+}
+
 .nav-end,
 .nav-start{
     display: flex;
     flex-direction: column;
+}
+
+
+.nav-end .download-block,
+.nav-end .profile-block,
+.nav-end hr{
+    width: 100%;
+}
+
+.nav-end hr{
+    display: none;
+    margin: 5px auto 5px .2rem ;
+    width: 80%;
 }
 
 main{
@@ -83,14 +103,15 @@ footer{
 
 @media screen and (min-width: 600px){
 
+    .fixedbar{
+        width: calc(100% - 150px);
+    }
+
     nav{
         width: 150px;
         height: calc(100vh - 50px);
     }
 
-    .fixedbar{
-        width: calc(100% - 150px);
-    }
 
     nav .logo{
         display: block;
@@ -103,6 +124,31 @@ footer{
     nav .nav-start,
     nav .nav-end{
         margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    nav .nav-end .download-block,
+    nav .nav-end .profile-block,
+    nav .nav-start .home-block,
+    nav .nav-start .search-block,
+    nav .nav-start .library-block{
+        display: flex;
+        align-items: center;
+    }
+
+    nav .nav-start span,
+    nav .nav-end span{
+        display: block;
+        flex: content 0 0;
+    }
+    
+    .nav-end hr{
+        display: block;
+    }
+
+    .nav-end .download-block img,
+    .nav-end .profile-block img{
+        width: 20px;
     }
 
 }
