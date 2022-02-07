@@ -115,16 +115,44 @@ nav .nav-start .playlist span{
 }
 
 nav .nav-start .playlist img{
+    display: none;
     width: 30px;
     filter: invert(1);
 }
 
 .flex{
     display: flex;
+    margin:0px 0px 5px -5px;
+
+}
+
+.playlist{
+    height: 32vh;
+}
+
+.playlist>h2{
+    font-size: .6rem;
+    display: none;
+    text-transform: uppercase;
+    margin: 15px 0px 5px 0px;
 }
 
 .flex>span{ 
-    align-self: center;
+    display: none;
+    vertical-align: middle;
+    line-height: 32px;
+    font-size: .8rem;
+}
+
+.playlist ul{
+    display: none;
+    overflow-y: auto;
+}
+
+.playlist ul li{
+    list-style: none;
+    font-size: .6rem;
+    padding: 5px 0;
 }
 
 main{
@@ -143,30 +171,25 @@ footer{
 
 
 @media screen and (min-width: 600px){
-
+    
     .fixedbar{
         width: calc(100% - 150px);
     }
-
+    
     nav{
         width: 150px;
         height: calc(100vh - 50px);
     }
-
+    
     nav .logo{
         display: block;
     }
-
+    
     nav .logo-small{
         display: none;
     }
-
-    nav .nav-start,
-    nav .nav-end{
-        margin-left: 5px;
-        margin-bottom: 5px;
-    }
-
+    
+    
     nav .nav-end .download-block,
     nav .nav-end .profile-block,
     nav .nav-start .home-block,
@@ -175,28 +198,40 @@ footer{
         display: flex;
         align-items: center;
     }
-
+    
     nav .nav-start a,
     nav .nav-end a{
         display: block;
         flex: content 0 0;
     }
-
+    
     .nav-end hr{
         display: block;
     }
-
+    
     .nav-end .download-block img,
     .nav-end .profile-block img{
         width: 20px;
     }
+    
+    nav .nav-start,
+    nav .nav-end{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
 
+    nav .nav-start .playlist img,
+    .playlist>h2,
+    .flex>span,
+    .playlist ul{
+        display: block;
+    }
 }
 
 @media screen
-  and (min-width: 700px){
-
-
+and (min-width: 700px){
+    
+    
 }
 
 /* ISTRUZIONI
