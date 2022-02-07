@@ -15,6 +15,12 @@ a{
     color: white;
 }
 
+.clerfix::after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
 /* :::::::::::::::::::::::::SCREEN 1: 320PX CELL XS:::::::::::::::::::::::::: */
 
 /*  
@@ -169,6 +175,58 @@ main{
     padding-top: 50px;
 }
 
+.nav_main{
+    padding: 10px ;
+}
+
+main .nav_main ul{
+    list-style: none;
+    font-size: .6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .nav_main ul li{
+    margin: 5px;
+}
+
+.container_main{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container_main h2{
+    font-size: .8rem;
+    padding: 10px 0;
+}
+
+.container_main h3{
+    font-size: .5rem;
+}
+
+.container_main h4{
+    font-size: .3rem;
+}
+
+.recently{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.container_main .recently .card img{
+    width: 125px;
+}
+
+.card{
+    width: 125px;
+}
+
+.card:nth-child(1n + 1){
+    margin-right: 5px;
+}
+
 /* :::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::: */
 
 footer{
@@ -179,6 +237,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
+    
 }
 
 footer .footer-left,
