@@ -178,40 +178,63 @@ footer{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    padding-top: 5px;
 }
 
 footer .footer-left,
-footer .footer-right{
-    font-size: .5rem;
+footer .footer-right,
+footer .footer-center{
+    width: calc((100% - 50vw -20px ) / 2 );
     display: flex;
-    flex: 0 1 0px;
+    align-items: center;
 }
 
-footer .footer-center{
-    flex: 0 1 0px;
+.footer-left{
+    font-size: .5rem;
+}
+
+.footer-center{
+    margin: 0 20px;
+    font-size: .5rem;
+}
+
+.footer-right{
+    padding-left: 5px;
 }
 
 .description-song{
-    padding-right: 30px;
     display: flex;
+    width: 45%;
+    padding: 0 5px;
+}
+
+.description-song h2 {
+    font-size: .4rem;
+    margin-left: -2px;
+}
+.description-song span{
+    font-size: .4rem;
 }
 
 footer .footer-left img{
-    flex: 0 0 content;
-    padding: 10px;
+    width: 25%;
 }
 
 footer .footer-left .icons-left{
-    width: 20px;
+    width: 10%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, .5);
+}
+
+footer .footer-left .icons-left i{
+    margin-bottom: 2px;
 }
 
 .footer-left .description-song,
-.footer-center{
+.footer-center {
     display: flex;
-    flex: 1 1 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -220,39 +243,47 @@ footer .footer-left .icons-left{
 .footer-center .nav-play{
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .footer-center .nav-play i{
-    font-size: .6rem;
-    padding: .2rem .8rem;
-}
-.footer-center .nav-play .play{
-    font-size: 1rem;
-    vertical-align: middle;
-    line-height: 10px;
+    font-size: .8rem;
+    padding: .1rem .4rem;
 }
 
-footer .footer-center .nav-count{
-    font-size: .5rem;
+.footer-center .nav-count {
     display: flex;
-    align-items: center; /*utilizzato per rendere hr una linea*/
-    justify-content: center;
 }
 
-footer .footer-center .nav-count hr{
-    width: 50px;
-    margin: 0px 15px;
+.nav-count .score .line-score{
+    width: 10vw;
+    height: 2px;
+    background-color: white;
 }
 
-footer .footer-right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .footer-right i{
+.nav-count .score{
     margin: 0 5px;
+    width: 25vw;
+    align-self: center;
+    background-color: rgba(255, 255, 255, .5);    
+}
+
+.footer-right i{
+    font-size: .5rem;
+    margin: 2px;
+}
+
+.footer-right .score .line-score{
+    width: 3vw;
+    height: 2px;
+    background-color: white;
+}
+
+.footer-right .score{
+    margin: 0 5px;
+    width: 15vw;
+    align-self: center;
+    background-color: rgba(255, 255, 255, .5);    
 }
 
 
