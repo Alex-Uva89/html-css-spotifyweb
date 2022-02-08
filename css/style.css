@@ -86,6 +86,7 @@ nav a .profile-icon{
 
 nav .nav-start .hidden,
 nav .nav-end .hidden{
+    color: rgba(255, 255, 255, .5);
     display: none;
     font-size: .6rem;
 }
@@ -125,6 +126,17 @@ nav .nav-start .playlist img{
     filter: invert(1);
 }
 
+.line-block{
+    border-left: 2px solid greenyellow;
+}
+
+/* NOTA AVENDO UTILIZZATO GLI SVG COME IMMAGINI E NON COME SVG NON HO POTUTO VARIARE IL COLORE E HO UTILIZZATO UN FILTRO BRITHNESS PER RIPRODURRE ESTETICAMENTE MEDESIMO EFFETTO */
+.nav-start .search-block a img,
+.nav-start .library-block a img{
+    filter: brightness(50%);
+}
+
+/* ****************************************************** */
 .flex{
     display: flex;
     margin:0px 0px 5px -5px;
@@ -160,6 +172,32 @@ nav .nav-start .playlist img{
     padding: 5px 0;
 }
 
+.playlist ul li a{
+color: rgba(255, 255, 255, .5)
+}
+
+.playlist ul li:hover a{
+    color: white;
+}
+
+.nav-start .home-block:hover a,
+.nav-start .search-block:hover a,
+.nav-start .library-block:hover a,
+.nav-start .search-block:hover a img,
+.nav-start .library-block:hover a img{
+    color: white;
+    filter: brightness(100%);
+}
+
+.nav-end .download-block .hidden,
+.nav-end .profile-block .hidden{
+    color: white;
+}
+
+.nav-end .download-block .hidden:hover{
+    color: rgba(255, 255, 255, .5);
+}
+
 /* :::::::::::::::::::::::::MAIN:::::::::::::::::::::::::: */
 
 main{
@@ -181,8 +219,13 @@ main .nav_main ul{
     justify-content: center;
 }
 
-main .nav_main ul li{
+main .nav_main ul li a{
     margin: 5px;
+    color: rgba(255, 255, 255, .3);
+}
+
+main .nav_main ul li:hover a{
+    color: white;
 }
 
 .container_main{
@@ -467,6 +510,10 @@ footer .footer-left .icons-left i{
     .flex>span,
     .playlist ul{
         display: block;
+    }
+
+    .line-block{
+        margin-left: -5px;
     }
 }
 
