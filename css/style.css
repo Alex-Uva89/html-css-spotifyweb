@@ -56,7 +56,7 @@ a{
 
 nav{
     width: 30px;
-    height: 100%;
+    height: calc(100vh - 50px);
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -261,28 +261,35 @@ footer{
 footer .footer-left,
 footer .footer-right,
 footer .footer-center{
-    width: calc((100% - 50vw -20px ) / 2 );
+    width: calc((100% - 50vw - 20px ) / 2 );
     display: flex;
     align-items: center;
 }
 
 .footer-left{
+    max-width: 150px;
     font-size: .5rem;
+    justify-content: space-between;
 }
 
 .footer-center{
     margin: 0 20px;
     font-size: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-right{
+    max-width: 150px;
     padding-left: 5px;
 }
 
 .description-song{
     display: flex;
-    width: 45%;
-    padding: 0 5px;
+    padding-right :5px;
+    align-items: center;
 }
 
 .description-song h2 {
@@ -293,8 +300,16 @@ footer .footer-center{
     font-size: .4rem;
 }
 
+.description-album{
+    display: flex;
+    flex-direction: column;
+}
+
+
 footer .footer-left img{
-    width: 25%;
+    max-width: 40px;
+    min-width: 30px;
+    padding: 0 5px;
 }
 
 footer .footer-left .icons-left{
@@ -307,14 +322,6 @@ footer .footer-left .icons-left{
 
 footer .footer-left .icons-left i{
     margin-bottom: 2px;
-}
-
-.footer-left .description-song,
-.footer-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-center .nav-play{
@@ -353,7 +360,11 @@ footer .footer-left .icons-left i{
 .footer-right .score .line-score{
     width: 3vw;
     height: 2px;
-    background-color: white;
+    background-color: white;  
+}
+
+.score:hover .line-score{
+    background-color: greenyellow;
 }
 
 .footer-right .score{
@@ -361,6 +372,21 @@ footer .footer-left .icons-left i{
     width: 15vw;
     align-self: center;
     background-color: rgba(255, 255, 255, .5);    
+}
+
+.count_score{
+    width: .5rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: white;
+    position:relative;
+    bottom: .5vh;
+    left: 9.5vw;
+    display: none;
+}
+
+.line-score:hover .count_score{
+    display: block;
 }
 
 
@@ -394,7 +420,8 @@ footer .footer-left .icons-left i{
         display: flex;
         align-items: center;
     }
-    
+
+
     nav .nav-start a,
     nav .nav-end a{
         display: block;
