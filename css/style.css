@@ -71,11 +71,11 @@ nav img{
     width: 30px;
     padding: .3rem;
 }
-nav div .download-icon{
+nav a .download-icon{
     padding: .4rem;
 }
 
-nav div .profile-icon{
+nav a .profile-icon{
     width: 25px;
     margin: 0.2rem;
     padding: 0;
@@ -84,8 +84,8 @@ nav div .profile-icon{
     background-color: rgb(194, 193, 193);
 }
 
-nav .nav-start a,
-nav .nav-end a{
+nav .nav-start .hidden,
+nav .nav-end .hidden{
     display: none;
     font-size: .6rem;
 }
@@ -142,7 +142,7 @@ nav .nav-start .playlist img{
     margin: 15px 0px 5px 0px;
 }
 
-.flex>span{ 
+.flex>a{ 
     display: none;
     vertical-align: middle;
     line-height: 32px;
@@ -365,6 +365,7 @@ footer .footer-left .icons-left i{
 
 .score:hover .line-score{
     background-color: greenyellow;
+    cursor: grab;
 }
 
 .footer-right .score{
@@ -389,6 +390,24 @@ footer .footer-left .icons-left i{
     display: block;
 }
 
+.footer-right .score .line-score .count_score{
+    width: .5rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: white;
+    position:relative;
+    bottom: .5vh;
+    left: 2.5vw;
+    display: none;
+}
+
+.footer-right .line-score:hover .count_score{
+    display: block;
+}
+
+.line-score:hover .count_score{
+    display: block;
+}
 
 /* :::::::::::::::::::::::::SCREEN2 :600PX TABLET:::::::::::::::::::::::::: */
 
@@ -422,8 +441,8 @@ footer .footer-left .icons-left i{
     }
 
 
-    nav .nav-start a,
-    nav .nav-end a{
+    nav .nav-start .hidden,
+    nav .nav-end .hidden{
         display: block;
         flex: content 0 0;
     }
