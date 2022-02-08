@@ -282,9 +282,9 @@ main .nav_main ul li:hover a{
 }
 
 .container_main .recently .card img:hover,
-.container_main .recently .card img:hover .play{
-    filter: opacity(50%);
-    background-image: url(../img/circle-play-regular.svg);
+.container_main .for_you .card img:hover,
+.container_main .popular_singer .card img:hover{
+    opacity: 100%;    
 }
 
 
@@ -296,12 +296,13 @@ main .nav_main ul li:hover a{
     position: relative;
 }
 
-.card i {
-    width: 90%;
-    height: 90%;
+.card .play{
+    padding: 20px;
+    opacity: 0%;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0 , 0, .6);
 }
 
 
@@ -415,7 +416,7 @@ footer .footer-left .icons-left i{
 
 .footer-center .nav-play i{
     font-size: .8rem;
-    padding: .1rem .4rem;
+    padding: .1rem .4rem 0rem;
 }
 
 .footer-center .nav-play .play:hover{
@@ -437,6 +438,10 @@ footer .footer-left .icons-left i{
     width: 25vw;
     align-self: center;
     background-color: rgba(255, 255, 255, .5);    
+}
+
+.nav-count span{
+    cursor: pointer;
 }
 
 .footer-right i{
@@ -555,9 +560,13 @@ footer .footer-left .icons-left i{
 
     nav .nav-start .playlist img,
     .playlist>h2,
-    .flex>span,
+    .flex>a,
     .playlist ul{
         display: block;
+    }
+
+    .flex:hover a{
+        color: rgba(255, 255, 255, .5);
     }
 
     .line-block{
