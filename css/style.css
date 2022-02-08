@@ -41,7 +41,7 @@ a{
     text-transform: uppercase;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 0.3rem 1.5rem;
+    padding: 0.3rem .2rem;
     align-self: center;
     margin-right: 5px;
 
@@ -49,6 +49,7 @@ a{
 
 .fixedbar a:hover{
     transform: scale(1.1);
+    transition: all .5s;
 }
 
 .max-container{
@@ -183,6 +184,7 @@ color: rgba(255, 255, 255, .5)
 
 .playlist ul li:hover a{
     color: white;
+    transition: all .5s;
 }
 
 .nav-start .home-block:hover a,
@@ -192,6 +194,7 @@ color: rgba(255, 255, 255, .5)
 .nav-start .library-block:hover a img{
     color: white;
     filter: brightness(100%);
+    transition: all .4s;
 }
 
 .nav-end .download-block .hidden,
@@ -201,6 +204,7 @@ color: rgba(255, 255, 255, .5)
 
 .nav-end .download-block .hidden:hover{
     color: rgba(255, 255, 255, .5);
+    transition: all .4s;
 }
 
 /* :::::::::::::::::::::::::MAIN:::::::::::::::::::::::::: */
@@ -236,6 +240,7 @@ main .nav_main ul li a{
 
 main .nav_main ul li:hover a{
     color: rgba(255, 255, 255, 1);
+    transition: all .8s;
 }
 
 .container_main{
@@ -285,7 +290,8 @@ main .nav_main ul li:hover a{
 .container_main .recently .card img:hover,
 .container_main .for_you .card img:hover,
 .container_main .popular_singer .card img:hover{
-    opacity: 100%;    
+    opacity: 100%;  
+    transition: all .1s;  
 }
 
 
@@ -401,7 +407,8 @@ footer .footer-left .icons-left i{
 
 footer .footer-left  .icons-left i:hover{
     transform: scale(1.3);
-    color:white
+    color:white;
+    transition: all .5s;
 }
 
 footer .footer-left .icons-left i{
@@ -421,6 +428,7 @@ footer .footer-left .icons-left i{
 
 .footer-center .nav-play .play:hover{
     transform: scale(1.3);
+    transition: all .9s;
 }
 
 .footer-center .nav-count {
@@ -458,6 +466,7 @@ footer .footer-left .icons-left i{
 .score:hover .line-score{
     background-color: greenyellow;
     cursor: grab;
+    transition: background-color .5s;
 }
 
 .footer-right .score{
@@ -480,6 +489,7 @@ footer .footer-left .icons-left i{
 
 .line-score:hover .count_score{
     display: block;
+    transition: all .1s;
 }
 
 .footer-right .score .line-score .count_score{
@@ -495,14 +505,17 @@ footer .footer-left .icons-left i{
 
 .footer-right .line-score:hover .count_score{
     display: block;
+    transition: all .1s;
 }
 
 .line-score:hover .count_score{
     display: block;
+    transition: all .1s;
 }
 
 .footer-right i:hover{
     transform: scale(1.3);
+    transition: all .5s;
 }
 
 /* :::::::::::::::::::::::::SCREEN2 :600PX TABLET:::::::::::::::::::::::::: */
@@ -567,6 +580,7 @@ footer .footer-left .icons-left i{
 
     .flex:hover a{
         color: rgba(255, 255, 255, .5);
+        transition: all .5s;
     }
 
     .line-block{
