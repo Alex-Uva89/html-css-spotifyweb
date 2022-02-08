@@ -33,6 +33,7 @@ a{
     right: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .fixedbar a{
@@ -333,8 +334,7 @@ footer{
     right: 0;
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
-    
+    z-index: 2; /* BONUS */
 }
 
 footer .footer-left,
