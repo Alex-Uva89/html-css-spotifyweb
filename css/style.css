@@ -120,6 +120,7 @@ nav .nav-start .playlist{
     margin-left: 5px;
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 nav .nav-start .playlist span{
@@ -150,7 +151,8 @@ nav .nav-start .playlist img{
 }
 
 .playlist{
-    height: 32vh;
+    max-height: 200px;
+    overflow-y: hidden;
 }
 
 .playlist>h2{
